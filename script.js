@@ -31,13 +31,13 @@ function munculTikus()
 
   tRandom.classList.add('muncul')
   
-  tRandom.classList.remove('muncul')
-  if(!selesai){
-    munculTikus()
-  }
   
-  // setTimeout(() => {
-  // }, wRandom);
+  setTimeout(() => {
+    tRandom.classList.remove('muncul')
+    if(!selesai){
+      munculTikus()
+    }
+  }, wRandom);
 }
 
 function mulai(){
@@ -48,7 +48,7 @@ function mulai(){
   munculTikus()
   setTimeout(() => {
     selesai = true
-  }, 30000);
+  }, 40000);
 }
 
 function pukul(){
