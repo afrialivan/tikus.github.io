@@ -41,14 +41,14 @@ function munculTikus()
 }
 
 function mulai(){
-  // selesai = false
+  selesai = false
   skor = 0
   papanskor.textContent = skor
 
   munculTikus()
   setTimeout(() => {
-    // selesai = true
-  }, 40000);
+    selesai = true
+  },50000);
 }
 
 function pukul(){
